@@ -1,0 +1,82 @@
+@import url("mobile.css") screen and (max-device-width: 480px);
+
+body {
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  border-top:5px solid #778899;
+  font-size:14pt;
+}
+
+a {
+  text-decoration:none;
+  color:#778899;
+}
+
+a:hover {
+  color:black;
+}
+
+.date {
+  float:right;
+  font-size:12pt;
+}
+
+li {
+  list-style-type:none;
+}
+
+li.posts {
+  margin-bottom:50px;
+}
+
+#container {
+  width:500px;
+  margin:0 auto 0 auto;
+  padding:20px 0 20px 0;
+}
+
+#navigation, #page-title, .pagination {
+  text-align:center;
+}
+
+#navigation {
+  width:400px;
+  margin:0 auto 50px auto;
+}
+
+.navlink {
+  display:inline-block;
+  padding:10px 20px 10px 20px;
+}
+
+img.logo {
+  width:100px;
+  margin:0 auto 20px auto;
+  display:block;
+  border-radius:1000px;
+  border:1px solid #E8E8E8;
+}
+
+#page-title {
+  text-align:center;
+  font-size:40pt;
+  margin-bottom:20px;
+}
+
+.gallery {
+  width:245px;
+  display:inline-block;
+  border:1px solid #E8E8E8;
+  vertical-align:top;
+  margin-bottom:4px;
+}
+
+#contact-info {
+  text-align:center;
+  line-height:1.5em;
+}
+
+#contact-info > a {
+  display:block;
+}

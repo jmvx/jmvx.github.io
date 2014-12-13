@@ -1,0 +1,14 @@
+<!-- Pagination Links -->
+<div class="pagination">
+  {% if page.previous.url %}
+    <a href="{{page.previous.url}}" class="previous">&#8604; Previous</a>
+  {% else %}
+    <span class="previous-none">&#8602; Previous</span>
+  {% endif %}
+  
+  {% if page.next.url %}
+    <a href="{{page.next.url}}" class="next">Next &#8605;</a>
+  {% else %}
+    <span class="next-none">Next &#8603;</span>
+  {% endif %}
+</div>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- mobile laytouts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {% if page.description %}
+    <!-- page description -->
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+    
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    
+    {% if page.style %}
+    <!-- special page formatting -->
+     <style type="text/css">
+         {{ page.style }}
+     </style>
+    {% endif %}
+    
+    <title>Michael Chu</title>
+</head>
+
+<body>
+    <div id="container">
+    
+    <div id="header">
+        <img class="logo" src="{{ site.baseurl }}/logo.png" />
+        
+        <div id="navigation">
+            <a href="{{ site.baseurl }}/"><div class="navlink">Home</div></a>
+            <a href="{{ site.baseurl }}/blog/"><div class="navlink">Blog</div></a>
+            <a href="{{ site.baseurl }}/gallery/"><div class="navlink">Gallery</div></a>
+            <a href="{{ site.baseurl }}/resume/"><div class="navlink">Résumé</div></a>
+        </div>
+        
+        <div id="page-title">
+            {% if page.title %}
+            {{ page.title }}
+            {% else %}
+            Michael Cornelius Chu
+            {% endif %}
+        </div>
+    </div>
+    
+    {{ content }}
+    
+    </div>
+</body>
+
+</html>
