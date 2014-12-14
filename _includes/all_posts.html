@@ -1,0 +1,18 @@
+{% for post in paginator.posts %}
+<li class="posts">
+    {% if post.link %}
+    <a href="{{ post.link }}">{{ post.title }}</a>
+    {% else %}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    {% endif %}
+    <span class="date">{{ post.date | date: "%B %-d, %Y" }} </span>
+<hr />
+
+{% if post.source %}
+    <p>Originally published in <i>{{ post.source }}</i></p>
+{% endif %}
+
+{{ post.excerpt }}
+
+</li>
+{% endfor %}

@@ -3,11 +3,6 @@ title: Blog
 layout: default
 ---
 
-{% for post in site.posts %}
-<li class="posts">
-  <a href="{{ post.url }}">{{ post.title }}</a>
-  <span class="date">{{ post.date | date: "%B %-d, %Y" }} </span>
-  <hr />
-  {{ post.excerpt }}
-</li>
-{% endfor %}
+{% include all_posts.html %}
+
+{% include pagination.html %}
