@@ -20,12 +20,18 @@ a {
 h1, h2, h3, h4, h5, h6 {
   padding:0 0 15px 0;
   margin:0;
+  font-weight:normal;
 }
 
 li, ul {
   list-style-type:none;
   padding:0;
   margin:0;
+}
+
+#content li {
+  list-style-type:circle;
+  padding-bottom:10px;
 }
 
 a:hover {
@@ -76,7 +82,7 @@ img.logo {
 
 #page-title {
   text-align:center;
-  font-size:40pt;
+  font-size:30pt;
   margin-bottom:60px;
 }
 

@@ -5,11 +5,9 @@ layout: default
 
 {% for post in site.posts %}
 <li class="posts">
-  <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+  <a href="{{ post.url }}">{{ post.title }}</a>
   <span class="date">{{ post.date | date: "%B %-d, %Y" }} </span>
   <hr />
   {{ post.excerpt }}
 </li>
 {% endfor %}
-
-{% include pagination-posts.html %}

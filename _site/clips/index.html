@@ -9,11 +9,29 @@
     
     
     <!-- page description -->
-    <meta name="description" content="My blog" />
+    <meta name="description" content="My published articles" />
     
     
     <link rel="stylesheet" type="text/css" href="/style.css" />
     
+    
+    <!-- special page formatting -->
+     <style type="text/css">
+         #content ul {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 50px; /* Firefox */
+    column-gap: 50px;
+}
+#content li {
+    display:inline-block;
+    width:200px;
+    text-align:center;
+}
+
+     </style>
     
     
     <title>Kelly C. Catalfamo</title>
@@ -35,7 +53,7 @@
         
         <div id="page-title">
             
-            Gallery
+            Clips
             
         </div>
         
@@ -43,13 +61,45 @@
     
     <!-- content of page or posts -->
     <div id="content">
-    
-<img class="gallery" src="//images/gallery/photo3.jpg" />
+    <ul>
 
-<img class="gallery" src="//images/gallery/photo2.jpg" />
+    <li>
+        <a href="/clips/Science">
+        <h3>Science</h3>
+        </a>
+    </li>
 
-<img class="gallery" src="//images/gallery/photo1.jpg" />
+    <li>
+        <a href="/clips/Government">
+        <h3>Government</h3>
+        </a>
+    </li>
 
+    <li>
+        <a href="/clips/Local">
+        <h3>Local</h3>
+        </a>
+    </li>
+
+    <li>
+        <a href="/clips/Education">
+        <h3>Education</h3>
+        </a>
+    </li>
+
+    <li>
+        <a href="/clips/Politics">
+        <h3>Politics</h3>
+        </a>
+    </li>
+
+    <li>
+        <a href="/clips/education">
+        <h3>Education</h3>
+        </a>
+    </li>
+
+</ul>
     </div>
     
     </div>

@@ -1,14 +1,21 @@
 ---
-title: Gallery
+title: Clips
 layout: default
-description: My blog
-images:
-- /images/gallery/photo3.jpg
-- /images/gallery/photo2.jpg
-- /images/gallery/photo1.jpg
-
+description: My published articles
+style: |
+    #content ul {
+        columns: 3;
+        -webkit-columns: 3;
+        -moz-columns: 3;
+        -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
+        -moz-column-gap: 50px; /* Firefox */
+        column-gap: 50px;
+    }
+    #content li {
+        display:inline-block;
+        width:200px;
+        text-align:center;
+    }
 ---
 
-{% for photo in page.images %}
-<img class="gallery" src="{{ site.baseurl }}{{ photo }}" />
-{% endfor %}
+{% include list_tags.html %}
