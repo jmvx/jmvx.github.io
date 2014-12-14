@@ -12,13 +12,14 @@
     <meta name="description" content="{{ page.description }}" />
     {% endif %}
     
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
     
     {% if page.style %}
     <!-- special page formatting -->
      <style type="text/css">
          {{ page.style }}
      </style>
+     <!-- end special formatting -->
     {% endif %}
     
     <title>Kelly C. Catalfamo</title>
@@ -29,7 +30,7 @@
     
     <!-- header contains logo, navigation, and title -->
     <div id="header">
-        <img class="logo" src="{{ site.baseurl }}logo.jpg" />
+        <img class="logo" src="/logo.jpg" />
         <div id="navigation">
         {% include pages.html %}
         </div>
