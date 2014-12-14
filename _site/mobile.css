@@ -1,1 +1,44 @@
 /* iPhone, Android rules here */
+
+#container, #content, #page-title, #navigation, #wrapper {
+  width:95% !important;
+}
+
+#page-title {
+  font-size:25pt !important;
+  text-align:center;
+}
+
+#content {
+  padding-left:10px !important;
+  padding-right:10px !important;
+}
+
+#footer {
+  height:200px !important;
+}
+
+#wrapper > #left, #wrapper > #right {
+  clear:both !important;
+  display:block;
+  width:100%;
+}
+
+.date {
+  clear:both !important;
+  display:block !important;
+  width:100% !important;
+}
+
+#content ul {
+    columns: 1 !important;
+    -webkit-columns: 1 !important;
+    -moz-columns: 1 !important;
+    text-align:center !important;
+    width:90% !important;
+}
+
+li.links, li.posts {
+    display:block !important;
+    margin-bottom:40px !important;
+}

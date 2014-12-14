@@ -1,5 +1,6 @@
 @import url("mobile.css") screen and (max-device-width: 480px);
 
+/* Changing some default styles */
 body {
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
   padding: 0;
@@ -17,34 +18,38 @@ a {
   color:#778899;
 }
 
+a:hover {
+  color:black;
+}
+
 h1, h2, h3, h4, h5, h6 {
   padding:0 0 15px 0;
   margin:0;
   font-weight:normal;
 }
 
+/* default lists and ul */
 li, ul {
   list-style-type:none;
   padding:0;
   margin:0;
 }
 
-#content li {
+/* style for posts that are clips or links */
+li.links {
   list-style-type:circle;
-  padding-bottom:10px;
+  margin-bottom:15px;
 }
 
-a:hover {
-  color:black;
+/* style for posts that are on the blog page */
+li.posts {
+  margin-bottom:15px;
+  list-style-type:none !important;
 }
 
 .date {
   float:right;
   font-size:12pt;
-}
-
-li.post {
-  margin-bottom:50px;
 }
 
 #container {
@@ -86,11 +91,15 @@ img.logo {
   margin-bottom:60px;
 }
 
+/* Style for Footer */
+#footer, #wrapper, #left, #right {
+  color:white;
+}
+
 #footer {
   width: 100%;
   height:160px;
   background-color: #778899;
-  overflow: auto;
   border-top: 6px solid #E8E8E8;
   line-height: 18px;
   font-size: 14px;
@@ -99,13 +108,11 @@ img.logo {
 #wrapper {
   margin:0 auto 0 auto;
   padding:20px 0 20px 0;
-  color:white;
   z-index:100;
 }
 
 #wrapper > #left, #wrapper > #right {
   width:300px;
-  color:white;
 }
 
 #wrapper > #left {
