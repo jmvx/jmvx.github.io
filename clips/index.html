@@ -1,0 +1,14 @@
+---
+title: Gallery
+layout: default
+description: My blog
+images:
+- /images/gallery/photo3.jpg
+- /images/gallery/photo2.jpg
+- /images/gallery/photo1.jpg
+
+---
+
+{% for photo in page.images %}
+<img class="gallery" src="{{ site.baseurl }}{{ photo }}" />
+{% endfor %}
