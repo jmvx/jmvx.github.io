@@ -9,21 +9,13 @@ style: |
 ---
 
 <!--START SIMPLEVIEWER EMBED.-->
-<script type="text/javascript">
-document.getElementsByTagName("head")[0].addEventListener(
-    "DOMNodeInserted",
-    function (event) {
-        if (event.target.id === "sv-meta") {
-            console.log(event.target);
-            //event.target.parentNode.removeChild(event.target);
-        }
-    },
-    true
-);
-</script>
-<script type="text/javascript" src="svcore/js/simpleviewer.unmin.js"></script>
+<script type="text/javascript" src="svcore/js/simpleviewer.js"></script>
 <script type="text/javascript">
 simpleviewer.ready(function () {
+    // Workaround for a WebKit bug related to dynamic viewports
+    var meta = simpleviewer.$('meta[name=viewport]');
+    meta.attr('content', meta.attr('content'));
+    
     simpleviewer.load("sv-container", "100%", "100%", "FFFFFF", true);
 });
 </script>
