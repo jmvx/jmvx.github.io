@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="true"
+	flickrUserName="katalfamo"
+	backgroundColor="FFFFFF"
+	backgroundTransparent="true"
+	frameColor="FFFFFF"
+	frameWidth="0"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="6"
+	galleryWidth="100%"
+	galleryHeight="100%"/>
