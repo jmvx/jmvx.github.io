@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     
-    <!-- mobile laytouts -->
+    <!-- mobile layouts -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
@@ -54,10 +54,22 @@
     <div id="content">
 
     <!--START SIMPLEVIEWER EMBED.-->
-<script type="text/javascript" src="svcore/js/simpleviewer.js"></script>
+<script type="text/javascript">
+document.getElementsByTagName("head")[0].addEventListener(
+    "DOMNodeInserted",
+    function (event) {
+        if (event.target.id === "sv-meta") {
+            console.log(event.target);
+            //event.target.parentNode.removeChild(event.target);
+        }
+    },
+    true
+);
+</script>
+<script type="text/javascript" src="svcore/js/simpleviewer.unmin.js"></script>
 <script type="text/javascript">
 simpleviewer.ready(function () {
-simpleviewer.load("sv-container", "100%", "100%", "FFFFFF", true);
+    simpleviewer.load("sv-container", "100%", "100%", "FFFFFF", true);
 });
 </script>
 <div id="sv-container"></div>
@@ -83,7 +95,8 @@ simpleviewer.load("sv-container", "100%", "100%", "FFFFFF", true);
             </div>
             
             <div id="right">
-            <i>"Nothing in life is to be feared, it is only to be understood."</i> Marie Curie
+            <div id="quote"><i>"Nothing in life is to be feared, it is only to be understood."</i> Marie Curie</div>
+            <div id="credit">Website designed by Julia Van Cleve</div>
             </div>
         </div>
     </div>

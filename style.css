@@ -1,4 +1,4 @@
-@import url("mobile.css") screen and (max-device-width: 480px);
+@import url("mobile.css"); /* screen and (max-device-width: 480px); */
 
 /* Changing some default styles */
 body {
@@ -128,10 +128,12 @@ img.logo {
 
 #wrapper > #left {
   float:left;
+  text-align:left;
 }
 
 #wrapper > #right {
   float:right;
+  text-align:right;
 }
 
 #footer a {
@@ -140,4 +142,8 @@ img.logo {
 
 #footer a:hover {
   color:white;
+}
+
+#credit {
+  margin-top:20px;
 }

@@ -27,11 +27,13 @@
   position: absolute;
   top: 0;
   left: 0;
+  
 }
 .sv-photo {
   float: none;
   text-align: center;
   position: absolute;
+  
 }
 .sv-caption {
   background: url(../img/caption-bg.png);
@@ -42,20 +44,24 @@
   bottom: 0;
   text-align: left;
   z-index: 9;
+
 }
 .sv-caption div {
   padding: 0 10px;
+  
 }
 .sv-caption .sv-paging {
   float: right;
   margin: 0 0 0 15px;
   padding: 0 10px 0 0;
   line-height: normal;
+  
 }
 .sv-caption .sv-title {
   font-size: 150%;
   line-height: normal;
   margin: 0;
+  
 }
 
 .cls-prev-photo {
@@ -69,6 +75,7 @@
   cursor: pointer;
   background: url(../img/empty-pixel.png);
   z-index: 8;
+  
 }
 .cls-prev-photo span, .sv-nav-page-prev {
   display: block;
@@ -80,6 +87,7 @@
   margin-top: -23px;
   background: url(../img/assets.png) no-repeat -9px -12px;
   display: none;
+  
 }
 .sv-cls-4-ipad .cls-prev-photo span,
 .sv-cls-4-iphone .cls-prev-photo span,
@@ -88,6 +96,7 @@
   width: 55px;
   height: 55px;
   background: url(../img/assets.png) no-repeat 6px 0px;
+  
 }
 
 .cls-next-photo {
@@ -101,6 +110,7 @@
   cursor: pointer;
   background: url(../img/empty-pixel.png);
   z-index: 8;
+  
 }
 .sv-nav-logo, .sv-photo-logo {
   display: block;
@@ -114,12 +124,14 @@
   text-decoration: none;
   font-size: 90%;
   background: url(http://simpleviewer.net/m/sv.png) no-repeat 0 0;
+  
 }
 
 .sv-cls-4-iphone.sv-vertical .sv-nav-logo,
 .sv-cls-4-iphone.sv-vertical .sv-photo-logo
 {
 	bottom:10px;
+  
 }
 
 /*
@@ -139,6 +151,7 @@
   margin-top: -23px;
   background: url(../img/assets.png) no-repeat -59px -12px;
   display: none;
+  
 }
 
 .sv-cls-4-ipad .cls-next-photo span,
@@ -148,6 +161,7 @@
   width: 55px;
   height: 55px;
   background: url(../img/assets.png) no-repeat -44px 0px;
+  
 }
 
 .sv-photo-nav .sv-nav-page-prev
@@ -159,6 +173,7 @@
 	width:55px;
 	background: url(../img/assets.png) no-repeat 7px 8px;
 	margin-top: -40px;
+  
 }
 .sv-photo-nav .sv-nav-page-next
 {
@@ -379,10 +394,10 @@
 /*
 .sv-cls-4-iphone .sv-photo-nav
 {
-	margin-left: 3px;
-	margin-top:5px;
-}
-*/
+  margin-left: 3px;
+  margin-top:5px;
+}*/
+
 
 /* android */
 /*
@@ -397,8 +412,7 @@
 /*
 .sv-cls-4-ipad .sv-photo-nav
 {
-	margin-left: 3px;
-	margin-top:5px;
+  margin-left: 3px;
+  margin-top:5px;
 }
 */
-

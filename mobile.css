@@ -15,7 +15,11 @@
 }
 
 #footer {
-  height:200px !important;
+  height:250px !important;
+}
+
+#wrapper {
+  width:90% !important;
 }
 
 #wrapper > #left, #wrapper > #right {
@@ -41,4 +45,15 @@
 li.links, li.posts {
     display:block !important;
     margin-bottom:40px !important;
+}
+
+#quote {
+  margin-top:20px;
+}
+
+#credit {
+  margin-top:0px;
+}
+
+#sv-container {
 }
