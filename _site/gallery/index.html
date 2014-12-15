@@ -9,7 +9,7 @@
     
     
     <!-- page description -->
-    <meta name="description" content="My blog" />
+    <meta name="description" content="My flickr photos" />
     
     
     <link rel="stylesheet" type="text/css" href="/style.css" />
@@ -44,13 +44,15 @@
     <!-- content of page or posts -->
     <div id="content">
 
-    
-<img class="gallery" src="//images/gallery/photo3.jpg" />
-
-<img class="gallery" src="//images/gallery/photo2.jpg" />
-
-<img class="gallery" src="//images/gallery/photo1.jpg" />
-
+    <!--START SIMPLEVIEWER EMBED.-->
+<script type="text/javascript" src="svcore/js/simpleviewer.js"></script>
+<script type="text/javascript">
+simpleviewer.ready(function () {
+simpleviewer.load("sv-container", "100%", "100%", "FFFFFF", true);
+});
+</script>
+<div id="sv-container"></div>
+<!-- END SIMPLEVIEWER EMBED -->
     
     </div>
     

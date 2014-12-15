@@ -1,14 +1,15 @@
 ---
 title: Gallery
 layout: default
-description: My blog
-images:
-- /images/gallery/photo3.jpg
-- /images/gallery/photo2.jpg
-- /images/gallery/photo1.jpg
-
+description: My flickr photos
 ---
 
-{% for photo in page.images %}
-<img class="gallery" src="{{ site.baseurl }}{{ photo }}" />
-{% endfor %}
+<!--START SIMPLEVIEWER EMBED.-->
+<script type="text/javascript" src="svcore/js/simpleviewer.js"></script>
+<script type="text/javascript">
+simpleviewer.ready(function () {
+simpleviewer.load("sv-container", "100%", "100%", "FFFFFF", true);
+});
+</script>
+<div id="sv-container"></div>
+<!-- END SIMPLEVIEWER EMBED -->
