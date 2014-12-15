@@ -35,6 +35,17 @@ li, ul {
   margin:0;
 }
 
+li > a.title {
+  width:500px;
+  display:inline-block;
+    vertical-align:top;
+}
+
+li > .date {
+  display:inline-block;
+  vertical-align:top;
+}
+
 /* style for posts that are clips or links */
 li.links {
   list-style-type:circle;
@@ -43,7 +54,7 @@ li.links {
 
 /* style for posts that are on the blog page */
 li.posts {
-  margin-bottom:15px;
+  margin-bottom:50px;
   list-style-type:none !important;
 }
 

@@ -1,0 +1,7 @@
+{% if page.source and page.link %}
+<p><i>Summary of article originally published in</i> {{ page.source }}.
+        <a href="{{ page.link }}">View full.</a></p>
+{% elsif post.source and post.link %}
+<p><i>Summary of article originally published in</i> {{ post.source }}.
+        <a href="{{ post.link }}">View full.</a></p>
+{% endif %}

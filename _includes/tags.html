@@ -1,7 +1,7 @@
 <ul>
 {% for tag in site.tags %}
     <li>
-        <a href="../clips/{{ tag | first | downcase }}">
+        <a href="../clips/{{ tag | first | downcase | replace:' ','-' }}">
         <h3>{{ tag | first | capitalize }}</h3>
         </a>
     </li>
