@@ -1,7 +1,11 @@
 /* iPhone, Android rules here */
 
-#container, #content, #page-title, #navigation, #wrapper {
+#container, #content {
   width:95% !important;
+}
+
+#navigation, #page-title, #wrapper {
+  width:100% !important;
 }
 
 #page-title {
@@ -47,13 +51,14 @@ li.links, li.posts {
     margin-bottom:40px !important;
 }
 
+li > a.title {
+  width:100% !important;
+}
+
 #quote {
   margin-top:20px;
 }
 
 #credit {
   margin-top:0px;
-}
-
-#sv-container {
 }
