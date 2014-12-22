@@ -158,8 +158,10 @@ div.gallery-item {
   display:inline-block;
   vertical-align:top;
   border: 1px solid #E8E8E8;
-  height:128px;
-  width:128px;
+  /*height:128px;
+  width:128px;*/
+  height:75px;
+  width:75px;
   overflow:hidden;
   margin-bottom:6px;
   
