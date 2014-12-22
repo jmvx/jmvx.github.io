@@ -8,6 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
+    <!-- for lightbox gallery -->
+    <script src="lightbox/js/jquery-1.11.0.min.js"></script>
+    <script src="lightbox/js/lightbox.min.js"></script>
+    <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+    
+    
+    
     <!-- page description -->
     <meta name="description" content="My flickr photos" />
     
@@ -52,19 +59,44 @@
     <!-- content of page or posts -->
     <div id="content">
 
-    <!--START SIMPLEVIEWER EMBED.-->
-<script type="text/javascript" src="svcore/js/simpleviewer.js"></script>
-<script type="text/javascript">
-simpleviewer.ready(function () {
-    // Workaround for a WebKit bug related to dynamic viewports
-    var meta = simpleviewer.$('meta[name=viewport]');
-    meta.attr('content', meta.attr('content'));
-    
-    simpleviewer.load("sv-container", "100%", "100%", "FFFFFF", true);
-});
-</script>
-<div id="sv-container"></div>
-<!-- END SIMPLEVIEWER EMBED -->
+    <p>Click any of the thumbnails to view the images full size.</p>
+<div id="gallery">
+
+<div class="gallery-item">
+<a href="photos/alan-turing.jpg" data-lightbox="gallery" data-title="this is alan turing"><img src="photos/alan-turing_thumb.jpg" /></a>
+</div>
+
+<div class="gallery-item">
+<a href="photos/anthony-bourdain.jpg" data-lightbox="gallery" data-title="this is ANTHONY BOURDAIN OMG OMG OMG"><img src="photos/anthony-bourdain_thumb.jpg" /></a>
+</div>
+
+<div class="gallery-item">
+<a href="photos/arc-triomphe.jpg" data-lightbox="gallery" data-title="this is an ARC"><img src="photos/arc-triomphe_thumb.jpg" /></a>
+</div>
+
+<div class="gallery-item">
+<a href="photos/arthurs-seat.jpg" data-lightbox="gallery" data-title="This is ARTHUR"><img src="photos/arthurs-seat_thumb.jpg" /></a>
+</div>
+
+<div class="gallery-item">
+<a href="photos/alan-turing.jpg" data-lightbox="gallery" data-title="this is alan turing"><img src="photos/alan-turing_thumb.jpg" /></a>
+</div>
+
+<div class="gallery-item">
+<a href="photos/anthony-bourdain.jpg" data-lightbox="gallery" data-title="this is ANTHONY BOURDAIN OMG OMG OMG"><img src="photos/anthony-bourdain_thumb.jpg" /></a>
+</div>
+
+<div class="gallery-item">
+<a href="photos/arc-triomphe.jpg" data-lightbox="gallery" data-title="this is an ARC"><img src="photos/arc-triomphe_thumb.jpg" /></a>
+</div>
+
+<div class="gallery-item">
+<a href="photos/arthurs-seat.jpg" data-lightbox="gallery" data-title="This is ARTHUR"><img src="photos/arthurs-seat_thumb.jpg" /></a>
+</div>
+
+</div>
+
+
     
     </div>
     

@@ -1,21 +1,11 @@
----
-title: Gallery
-layout: default
-description: My flickr photos
-style: |
-    #page-title {
-        margin-bottom:0px;
-    }
----
-
-<!--START SIMPLEVIEWER EMBED.-->
+<!-- START SIMPLEVIEWER EMBED.-->
 <script type="text/javascript" src="svcore/js/simpleviewer.js"></script>
 <script type="text/javascript">
 simpleviewer.ready(function () {
     // Workaround for a WebKit bug related to dynamic viewports
     var meta = simpleviewer.$('meta[name=viewport]');
     meta.attr('content', meta.attr('content'));
-    
+
     simpleviewer.load("sv-container", "100%", "100%", "FFFFFF", true);
 });
 </script>

@@ -57,3 +57,13 @@ li > a.title {
 #credit {
   margin-top:5vw !important;
 }
+
+/* mobile gallery */
+#gallery {
+  width:100% !important;
+}
+
+div.gallery-item {
+  height:90px !important;
+  width:90px !important;
+}
