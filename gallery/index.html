@@ -1,0 +1,44 @@
+---
+title: Gallery
+layout: default
+description: My flickr photos
+style: |
+    #page-title {
+        margin-bottom:0px;
+    }
+gallery:
+- image: photos/alan-turing.jpg
+  thumb: photos/alan-turing_thumb.jpg
+  caption: this is alan turing
+- image: photos/anthony-bourdain.jpg
+  thumb: photos/anthony-bourdain_thumb.jpg
+  caption: this is ANTHONY BOURDAIN OMG OMG OMG
+- image: photos/arc-triomphe.jpg
+  thumb: photos/arc-triomphe_thumb.jpg
+  caption: this is an ARC
+- image: photos/arthurs-seat.jpg
+  thumb: photos/arthurs-seat_thumb.jpg
+  caption: This is ARTHUR
+- image: photos/alan-turing.jpg
+  thumb: photos/alan-turing_thumb.jpg
+  caption: this is alan turing
+- image: photos/anthony-bourdain.jpg
+  thumb: photos/anthony-bourdain_thumb.jpg
+  caption: this is ANTHONY BOURDAIN OMG OMG OMG
+- image: photos/arc-triomphe.jpg
+  thumb: photos/arc-triomphe_thumb.jpg
+  caption: this is an ARC
+- image: photos/arthurs-seat.jpg
+  thumb: photos/arthurs-seat_thumb.jpg
+  caption: This is ARTHUR
+---
+
+<p>Click any of the thumbnails to view the images full size.</p>
+<div id="gallery">
+{% for i in page.gallery %}
+<div class="gallery-item">
+<a href="{{ i.image }}" data-lightbox="gallery" data-title="{{ i.caption }}"><img src="{{ i.thumb }}" /></a>
+</div>
+{% endfor %}
+</div>
+
