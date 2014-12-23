@@ -151,7 +151,7 @@ img.logo {
 /* gallery */
 #gallery {
   width:672px;
-  margin:0 auto 0 auto;
+  margin:0 auto 20px; auto;
 }
 
 div.gallery-item {

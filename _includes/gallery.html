@@ -2,11 +2,13 @@
   <div id="gallery">
   {% for g in site.data.galleries %}
     {% if g.id == gallery_id %}
-    <p>{{ g.description }}</p>
+    <a href="{{ site.url }}/gallery/{{ g.folder }}/">
+      <h3>{{ g.description }}</h3>
+    </a>
       <!-- begin image gallery -->
       {% for i in g.images %}
       <div class="gallery-item">
-      <a href="{{ g.folder }}/{{ i.image }}" data-lightbox="gallery" data-title="{{ i.caption }}"><img src="{{ g.folder }}/{{ i.thumb }}" /></a>
+      <a href="{{ site.url }}/gallery/{{ g.folder }}/{{ i.image }}" data-lightbox="gallery" data-title="{{ i.caption }}"><img src="{{ site.url }}/gallery/{{ g.folder }}/{{ i.thumb }}" /></a>
       </div>
       {% endfor %}
       <!-- end image gallery -->
