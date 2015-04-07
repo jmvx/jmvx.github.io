@@ -33,46 +33,14 @@
 <body>
     <div id="container">
     
-    <!-- header contains logo, navigation, and title -->
-    <div id="header">
-        <a href="/"><img class="logo" src="/logo.jpg" /></a>
-        <div id="navigation">
-        {% include pages.html %}
-        </div>
-        
-        <div id="page-title">
-            {% if page.title %}
-            {{ page.title }}
-            {% else %}
-            Kelly C. Catalfamo
-            {% endif %}
-        </div>
+        {% include header.html %}
+    
+        <!-- content of page or posts -->
+        <div id="content">{{ content }}</div>   
         
     </div>
     
-    <!-- content of page or posts -->
-    <div id="content">
-
-    {{ content }}
-    
-    </div>
-    
-    </div>
-   
-    <!-- footer contains other information-->
-    <div id="footer">
-        <div id="wrapper">
-            
-            <div id="left">
-            {% include contact.html %}
-            </div>
-            
-            <div id="right">
-            <div id="quote"><i>"Nothing in life is to be feared, it is only to be understood."</i> Marie Curie</div>
-            <div id="credit">Website designed by <a href="http://jmv.me">Julia Van Cleve</a></div>
-            </div>
-        </div>
-    </div>
+    {% include footer.html %} 
     
 </body>
 

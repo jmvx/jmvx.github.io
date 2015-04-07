@@ -1,13 +1,11 @@
 /* iPhone, Android rules here */
 
-#container, #wrapper, #navigation {
+#container, #navigation {
   width:100vw !important;
 }
 
 #content {
   width:90vw !important;
-  margin-left:5vw !important;
-  margin-right:5vw !important;
 }
 
 #page-title {
@@ -16,15 +14,12 @@
 }
 
 #footer {
-  height:275px !important;
+  height:300px !important;
 }
 
-#wrapper > #left, #wrapper > #right {
+#left, #right {
   clear:both !important;
   display:block !important;
-  width:80vw !important;
-  padding-left:5vw !important;
-  padding-right:5vw !important;
 }
 
 #content ul {
@@ -35,10 +30,16 @@
   clear:both !important;
   display:block !important;
   width:90vw !important;
+  margin-top:5px;
+  margin-bottom:5px;
 }
 
 #content li > h3.tags {
     text-align:center !important;
+}
+
+#page-title, #navigation {
+    margin-bottom:20px !important;
 }
 
 li.links, li.posts {
@@ -48,14 +49,6 @@ li.links, li.posts {
 
 li > a.title {
   width:85vw !important;
-}
-
-#quote {
-  margin-top:5vw !important;
-}
-
-#credit {
-  margin-top:5vw !important;
 }
 
 /* mobile gallery */

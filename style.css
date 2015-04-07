@@ -1,10 +1,23 @@
 @import url("mobile.css") screen and (max-device-width: 480px);
 
 /* Changing some default styles */
+* {
+    margin:0;
+    padding:0;
+    -webkit-text-size-adjust: none;
+}
+
+.posts > hr {
+    margin-bottom:10px;
+    margin-top:5px;
+}
+
+html, body {
+    height:100%;
+}
+
 body {
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-  padding: 0;
-  margin: 0;
   border-top:5px solid #778899;
   font-size:14pt;
 }
@@ -31,13 +44,11 @@ h1, h2, h3, h4, h5, h6 {
 /* default lists and ul */
 li, ul {
   list-style-type:none;
-  padding:0;
-  margin:0;
 }
 
 li > a.title {
-  width:500px;
-  display:inline-block;
+    width:500px;
+    display:inline-block;
     vertical-align:top;
 }
 
@@ -63,11 +74,23 @@ li.posts {
   font-size:12pt;
 }
 
+.summary {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
 #container {
   position:relative;
-  min-height:500px;
-  margin:0 auto 0 auto;
-  padding:20px 0 100px 0;
+  min-height:100%;
+  width:100%;
+}
+
+#content {
+    overflow:auto;
+    width: 700px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:170px;
 }
 
 #navigation, #page-title, .pagination {
@@ -75,7 +98,7 @@ li.posts {
 }
 
 #footer #wrapper, #navigation, #container {
-  width:700px;
+  width:100%;
 }
 
 #navigation {
@@ -90,7 +113,7 @@ li.posts {
 
 img.logo {
   width:100px;
-  margin:0 auto 10px auto;
+  margin:20px auto 10px auto;
   display:block;
   border-radius:1000px;
   border:1px solid #E8E8E8;
@@ -103,35 +126,31 @@ img.logo {
 }
 
 /* Style for Footer */
-#footer, #wrapper, #left, #right {
+#footer, #left, #right {
   color:white;
 }
 
 #footer {
-  width: 100%;
-  height:170px;
-  background-color: #778899;
-  border-top: 6px solid #E8E8E8;
-  line-height: 18px;
-  font-size: 14px;
+    margin-top: -150px;
+    height:170px;
+    background-color: #778899;
+    border-top: 6px solid #E8E8E8;
+    line-height: 18px;
+    font-size: 14px;
+    clear:both;
 }
 
-#wrapper {
-  margin:0 auto 0 auto;
-  padding:20px 0 20px 0;
-  z-index:100;
+#left, #right {
+  width:260px;
+  margin:20px;
 }
 
-#wrapper > #left, #wrapper > #right {
-  width:300px;
-}
-
-#wrapper > #left {
+#left {
   float:left;
   text-align:left;
 }
 
-#wrapper > #right {
+#right {
   float:right;
   text-align:right;
 }
@@ -164,8 +183,6 @@ div.gallery-item {
   width:75px;
   overflow:hidden;
   margin-bottom:6px;
-  
-  
 }
 
 .gallery-item > a > img {
