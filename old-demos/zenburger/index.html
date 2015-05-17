@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Julia Van Cleve</title>
+    <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
+    <script type="text/javascript" src="jquery.js"></script>
+  
+    <script>
+    
+    $(document).ready(function(){
+      
+      function slideshow(pictures,speed){
+        $(pictures).each(function(index){
+          var apic = $(this);
+          var prev = (index == 0) ? $(pictures).eq(-1) : apic.prev();
+          
+          setTimeout(function(){
+            prev.promise().done(function(){
+              prev.removeClass('active');
+            });
+            apic.addClass('active');
+            apic.fadeIn(speed, function() {
+              prev.hide();
+            });
+          },index*speed);
+        });
+      }  
+      var numpics = 3 // change for more than 3 images
+      var speed = 4000;
+      var pictures = $('.slideshow');
+      
+      slideshow(pictures,speed); 
+      setInterval(function () { 
+        slideshow(pictures,speed);
+      },numpics*speed);
+    });
+    
+    </script>
+  
+  </head>
+  
+  <body>
+    
+    <div id="titlebar">
+  <div id="maintitle">
+    <a href="index.html">ZenBurger</a>
+  </div>
+  
+  <div class="clear" />
+
+  <div id="subtitle">
+    We just love burgers.
+  </div>
+
+  <ul id="navigation">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<div class="clear" />
+
+    <div id="container-frontpage"> 
+      <img class="slideshow" src="slideshow/food1.jpg" />
+      <img class="slideshow" src="slideshow/food2.jpg" />
+      <img class="slideshow" src="slideshow/food3.jpg" />    
+    </div>
+    
+    <footer>We are on <a href="http://twitter.com/">Twitter</a></footer>
+    
+  </body>
+</html>

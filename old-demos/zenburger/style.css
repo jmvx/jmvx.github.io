@@ -1,0 +1,104 @@
+body {
+  font-family:sans-serif;
+}
+
+div.clear {
+  clear:both;
+}
+
+#titlebar {
+  margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+  width:820px; 
+}
+
+#maintitle {
+  position:relative;
+  top:16px;
+  float:left;
+  font-size: 20pt;
+}
+
+#maintitle a {
+  color:red;
+}
+
+#maintitle a:hover {
+  color:orange;
+}
+
+#subtitle {
+  float:left;
+  position:relative;
+  top:16px;
+  font-size:10pt;
+}
+
+#navigation {
+  float:right;
+  font-size:10pt;
+}
+
+#navigation li {
+  list-style-type:none;
+  display:inline;
+  padding-left:40px;
+}
+
+#navgation li:first-child { # fix this please
+  padding-left:0px;
+  color:red;
+}
+
+a {
+  text-decoration:none;
+  color:purple;
+}
+
+a:hover {
+  color:orange;
+}
+
+#container {
+  width:800px;
+  height:500px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  overflow:hidden;
+}
+
+#container-frontpage {
+  position:relative;
+  width:800px;
+  height:500px;
+  margin-left:auto;
+  margin-right:auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  overflow:hidden;
+  /*to do: update sinatra file*/
+  padding:10px;
+}
+
+#container-frontpage img.slideshow {
+  position:absolute;
+  display:none;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:0;
+}
+
+#container-frontpage img.active {
+  z-index:1 !important;
+}
+
+footer {
+  font-size:10pt;
+  text-align:center;
+  padding-top:10px;
+}

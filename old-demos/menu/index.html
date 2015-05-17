@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="testing.css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<title>Menu Demo - jmv.me</title>
+</head>
+
+<script> 
+$(document).ready(function(){
+	
+	$(".b").hide();
+	$(".menu").mouseenter(
+	function(){
+    	$(this).stop(true, true).animate({width:'800'});
+		$(".a",this).hide();
+		$(".b",this).show();
+  	});
+	$(".menu").mouseleave(
+	function(){
+		$(this).stop(true, true).animate({width:'100'});
+		$(".a",this).show();
+		$(".b",this).hide();
+	});
+	
+});
+</script>
+
+<body>
+	<div id="title">Menu Demo</div>
+	<div id="subtitle">Expanding menu bars with jQuery</div>
+	
+		<div id="rainbow">
+			<div id="r1" class="menu">
+				<span class="a">E-mail</span>
+				<span class="b"><a href="mailto:julia@jmv.me">julia@jmv.me</a></span>
+			</div>
+			<div id="r2" class="menu">
+				<span class="a">Facebook</span>
+				<span class="b"><a href="https://www.facebook.com/jmvancleve" target="_blank">jmvancleve</a></span>
+			</div>
+			<div id="r3" class="menu">
+				<span class="a">Twitter</span>
+				<span class="b"><a href="https://twitter.com/jmvx" target="_blank">@jmvx</a></span>
+			</div>
+			<div id="r4" class="menu">
+				<span class="a">Flickr</span>
+				<span class="b"><a href="http://www.flickr.com/photos/jmv_me/" target="_blank">jmv_me</a></span>
+			</div>
+			<div id="r5" class="menu">
+				<span class="a">LinkedIn</span>
+				<span class="b"><a href="http://www.linkedin.com/in/jmvancleve" target="_blank">jmvancleve</a></span>
+			</div>
+			<div id="r6" class="menu">
+				<span class="a">Github</span>
+				<span class="b"><a href="https://github.com/jmvx" target="_blank">jmvx</a></span>
+			</div>
+		</div>
+		
+</body>
+
+</html>

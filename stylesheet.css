@@ -1,0 +1,179 @@
+html {
+	background-color:white;
+	font-family:"Helvetica neue","Helvetica","Arial",sans-serif;
+	color:#516057;
+}
+
+body {
+	width:820px;
+	margin:auto;
+	margin-top:100px;
+}
+
+#title {
+	font-family:"Helvetica neue","Helvetica","Arial",sans-serif;
+	font-weight:bold;
+	font-size:50px;
+	color:#244747;
+}
+
+#subtitle {
+	color:#488F8F;
+}
+
+#pagetitle {
+  font-weight:bold;
+}
+
+#summary {
+	margin-top:10px;
+	padding:10px;
+	width:450px;
+	position:absolute;
+	background-color:#e0e0e0;
+	line-height: 1.3em;
+  border-radius: 5px;
+}
+
+#summary a {
+	text-decoration:none;
+	color:#488F8F;
+}
+
+#summary a:hover {
+	color:#60BFBF;
+}
+
+a {
+	text-decoration:none;
+	color:white;
+}
+
+#title a {
+  color:#244747;
+}
+
+.dropdown {
+	position:absolute;
+	color:white;
+	background-color:inherit;
+	left:0;
+	top:20px;
+	padding-right:117px;
+	padding-bottom:13px;
+    width:104px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.dropdown li {
+	list-style-type:none;
+	text-align:left;
+	line-height: 1.5em;
+	border-bottom:thin solid white;
+	width:145px;
+}
+
+.dropdown li.last-item {
+	border:none;
+}
+
+a:hover {
+	color:#EFF2D8;
+}
+
+#navigation {
+	margin-top:10px;
+	margin-left:auto;
+	text-align:right;
+}
+
+#r1, #r2, #r3, #r4, #r5{
+	margin-left:auto;
+	width:100px;
+	padding:10px;
+	color:white;
+	position:relative;
+  
+}
+
+#r1 {
+	background-color:#244747;
+	margin-left:auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#r2 {
+	background-color:#305F5F;
+}
+
+#r3 {
+	background-color:#488F8F;
+}
+
+#r4 {
+	background-color:#60BFBF;
+}
+
+#r5 {
+	background-color:#91D2D3;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#copy {
+	margin-top:155px;
+	text-align:center;
+	border-top:thin solid #e0e0e0;
+	padding-top:10px;
+	font-size:10pt;
+}
+
+#copy a {
+	color:#488F8F;
+}
+
+#copy a:hover {
+	color:#60BFBF;
+}
+
+.nofloat {
+  clear:both;
+}
+
+.gallery {
+  display:inline-block;
+  vertical-align:top;
+  height:130px;
+  width:95px;
+  background:white;
+  border-radius:5px;
+  margin-top:10px;
+  text-align:center;
+  font-size:12px;
+  padding:4px;
+  margin-left:6px;
+  position:relative;
+}
+
+.gallery img {
+  width:95px;
+  padding-top:5px; 
+}
+
+.badge {
+  border:1px solid orange;
+  color:orange;
+  background-color:white;
+  border-radius:3px;
+  padding-left:2px;
+  padding-right:2px;
+  margin:1px;
+  font-size:10px;
+  text-align:center;
+  position:absolute;
+  top:25px;
+  right:1px;
+  font-weight:bold;
+}
