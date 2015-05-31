@@ -1,6 +1,6 @@
 html {
 	background-color:white;
-	font-family:"Helvetica neue","Helvetica","Arial",sans-serif;
+	font-family: 'Merriweather', serif;
 	color:#516057;
 }
 
@@ -20,13 +20,19 @@ a:hover {
 }
 
 #title {
-	font-family:"Helvetica neue","Helvetica","Arial",sans-serif;
-	font-weight:bold;
-	font-size:50px;
+	font-family: 'Unica One', cursive;
+    text-transform: uppercase;
 }
 
-#title a, #subtitle a {
-    color:#244747;
+#title a {
+    color:#0065BD;
+    font-size:40pt;
+}
+
+#subtitle {
+    color:gray;
+    font-style:italic;
+    font-size:18pt;
 }
 
 #myprojects {
@@ -38,7 +44,7 @@ a:hover {
     border:1px solid #e0e0e0;
     padding:10px;
     margin-bottom:20px;
-    height:60px;
+    height:75px;
     vertical-align:top;
     border-radius:5px;
     /* gradual hover effect */
@@ -54,6 +60,14 @@ a:hover {
 }
 
 .name {
+    font-family: 'Unica One', cursive;
+    color:#0065BD;
+    text-transform: uppercase;
+    font-size:15pt;
+    padding-bottom:10px;
+}
+
+.description {
     color:#516057;
 }
 
