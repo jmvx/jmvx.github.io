@@ -5,131 +5,18 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 	<title>Julia M. Van Cleve</title>
-	<script type="text/javascript" src="jquery.js"></script>
-
-<script> 
-$(document).ready(function(){
-	
-	$(".b").hide();
-	$(".dropdown").hide();
-	
-	$(".menu").mouseenter(
-	function(){
-    	$(this).stop(true,true).animate({width:'325'});
-		$(".dropdown li").mouseenter(function(){
-			$(".a",this).hide();
-			$(".b",this).show();
-		});
-		$(".dropdown li").mouseleave(function(){
-			$(".a",this).show();
-			$(".b",this).hide();
-		});
-		console.log($('.dropdown', this).height());
-		$(".dropdown",this).stop(true,true).delay(250).slideDown(1000*$('.dropdown', this).height() / 206);
-  	});
-	$(".menu").mouseleave(
-	function(){
-		$(this).stop(true,true).animate({width:'100'});
-		$(".dropdown",this).stop(true,true).hide();
-	});
-	
-});
-</script>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="repositories.js"></script>
 </head>
 
 <body>
 	<div id="title"><a href="http://jmv.me/">Julia M. Van Cleve</a></div>
-	<div id="subtitle">Web Developer and Math Teacher</div>
-	
-	<div id="summary">
-I am a math teacher at <a href="http://www.ogsd.k12.ca.us/html/schoolinfo.html" target="_blank">Herman Intermediate School</a> educating 7th and 8th grade students. I previously studied mathematics at <a href="http://rpi.edu/dept/math/" target="_blank">Rensselaer Polytechnic Institute</a> and graduated in June 2012 from <a href="https://gse-step.stanford.edu" target="_blank">Stanford University</a> with an M.A. in Secondary Education. Some of my interests include dancing (particularly <a href="http://ballroom.union.rpi.edu" target="_blank">ballroom</a> and <a href="http://ceili.stanford.edu" target="_blank">Irish</a> dancing), travelling, photography, and web design.
-	</div>
-	
-		<div id="navigation">
-            <a href="http://jmv.me/" target="_blank"><div id="r1">jmv.me</div></a>
-			<div id="r2" class="menu">
-				<span class="a">Contact</span>
-				<div class="dropdown">
-					<ul>
-						<li><a href="mailto:julia@jmv.me"><div>
-							<span class="a">E-mail</span>
-							<span class="b">julia@jmv.me</span>
-						</div></a></li>
-						<li><a href="https://twitter.com/jmvx" target="_blank"><div>
-							<span class="a">Twitter</span>
-							<span class="b">@jmvx</span>
-						</div></a></li>
-						<li><a href="http://www.linkedin.com/in/jmvancleve" target="_blank"><div>
-							<span class="a">LinkedIn</span>
-							<span class="b">jmvancleve</span>
-						</div></a></li>
-						<li><a href="https://www.facebook.com/jmvancleve" target="_blank"><div>
-							<span class="a">Facebook</span>
-							<span class="b">jmvancleve</span>
-						</div></a></li>
-						<li><a href="http://www.flickr.com/photos/jmv_me/" target="_blank"><div>
-							<span class="a">Flickr</span>
-							<span class="b">jmv_me</span>
-						</div></a></li>	
-						<li class="last-item"><a href="https://github.com/jmvx" target="_blank"><div>
-							<span class="a">GitHub</span>
-							<span class="b">jmvx</span>
-						</div></a></li>
-					</ul>
-				</div>
-			</div>
-			
-			<div id="r3" class="menu">
-				<span class="a">Projects</span>
-				<div class="dropdown">
-					<ul>
-						<li><a href="https://github.com/jmvx" target="_blank"><div>
-							<span class="a">GitHub</span>
-							<span class="b">jmvx</span>
-						</div></a></li>
-						<li class="last-item"><a href="http://projecteuler.net/profile/jmvx.png" target="_blank"><div>
-							<span class="a">Project Euler</span>
-							<span class="b">jmvx</span>
-						</div></a></li>
-					</ul>
-				</div>
-			</div>
-      
-      <!-- NEW ENTRY -->
-      
-			<div id="r4" class="menu">
-				<span class="a">R&eacute;sum&eacute;</span>
-				<div class="dropdown">
-					<ul>
-						<li><a href="files/resume-juliavancleve.pdf" target="_blank">
-							<div>Download&nbsp;R&eacute;sum&eacute;</div></a></li>
-  						<li class="last-item"><a href="http://www.linkedin.com/in/jmvancleve" target="_blank"><div>
-  							<span class="a">LinkedIn</span>
-  							<span class="b">jmvancleve</span>
-  						</div></a></li>
+	<div id="subtitle">Select any project below to view my repository</div>
+    <div id="myprojects"></div>
 
-					</ul>
-				</div>
-			</div>
-			
-			<div id="r5" class="menu">
-				<span class="a">Teaching</span>
-				<div class="dropdown">
-					<ul>
-						<li><a href="http://www.edmodo.com/jvancleve" target="_blank">
-							<div>Edmodo</div></a></li>
-						<li class="last-item"><a href="http://herman.schoolloop.com/jvancleve" target="_blank">
-							<div>School&nbsp;Loop</div></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-    
-    <div class="nofloat"></div>
 
 <footer>		
-<div id="copy">All work &copy; <a href="http://jmv.me/" property="cc:attributionName" rel="cc:attributionURL">Julia Van Cleve</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</div>
+All work &copy; <a href="http://jmv.me/" property="cc:attributionName" rel="cc:attributionURL">Julia Van Cleve</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
 </footer>
 		
 </body>
