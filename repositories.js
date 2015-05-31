@@ -9,7 +9,12 @@ $(document).ready(function() {
         url = result[i].html_url;
         name = result[i].name;
         description = result[i].description;
-        $("div#myprojects").append("<a href='" + url + "' target='_blank'><div class='project'> <div class='name'>" + name + "</div><div class='description'>" + description + "</div></div></a>");
+        if (result[i].homepage) {
+          link = result[i].homepage;
+        } else {
+          link = url;
+        }
+        $("div#myprojects").append("<a href='" + link + "' target='_blank'><div class='project'> <div class='name'>" + name + "</div><div class='description'>" + description + "</div></div></a>");
       }
       
       $(".project:even").addClass('left-col');
