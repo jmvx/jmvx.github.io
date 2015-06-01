@@ -10,7 +10,7 @@ body {
 	margin-top:50px;
 }
 
-@media screen and (min-width:500px) {
+@media screen and (min-device-width:500px) {
     body {
         width:88% !important;
         margin:20px !important;
