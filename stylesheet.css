@@ -12,11 +12,11 @@ body {
 
 a {
 	text-decoration:none;
-    color:#488F8F;
+    color:gray;
 }
 
 a:hover {
-	color:#60BFBF;
+	color:#0065BD;
 }
 
 #title {
