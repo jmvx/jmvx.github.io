@@ -1,0 +1,9 @@
+body {
+    width:88%;
+    margin:20px;
+    margin-top:20px;
+}
+
+.left-col, .right-col {
+    width:100%;
+}
