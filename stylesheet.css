@@ -1,5 +1,3 @@
-@import url("mobile.css") screen and (max-device-width: 480px);
-
 html {
 	background-color:white;
 	font-family: 'Merriweather', serif;
@@ -10,6 +8,22 @@ body {
 	width:800px;
 	margin:auto;
 	margin-top:50px;
+}
+
+@media screen and (min-width:500px) {
+    body {
+        width:88% !important;
+        margin:20px !important;
+        margin-top:20px !important;
+    }
+    
+    .left-col, .right-col {
+        width:100% !important;
+    }
+    
+    .left-col {
+        margin-right:0px !important;
+    }
 }
 
 a {
