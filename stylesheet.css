@@ -24,6 +24,10 @@ body {
     .left-col {
         margin-right:0px !important;
     }
+    
+    a {
+         padding-bottom:80px !important;
+    }
 }
 
 a {
