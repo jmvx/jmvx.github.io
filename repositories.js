@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
+  jQuery.ajaxSetup({isLocal:true});
   $.ajax({
     type: "GET",
     url: "https://api.github.com/users/jmvx/repos",
