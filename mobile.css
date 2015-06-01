@@ -7,3 +7,7 @@ body {
 .left-col, .right-col {
     width:100% !important;
 }
+
+.left-col {
+    margin-right:0px !important;
+}
