@@ -23,7 +23,10 @@ $(document).ready(function() {
       $(".project:even").addClass('left-col');
       $(".project:odd").addClass('right-col');
       
-      
+    },
+    error: function(xhr, textStatus, errorThrown) {
+      console.log(errorThrown);
+      console.log(textStatus);
     }
   });
   
