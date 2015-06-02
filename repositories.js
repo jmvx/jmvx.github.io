@@ -1,6 +1,8 @@
 $(document).ready(function() {
-  jQuery.ajaxSetup({isLocal:true});
-  $.ajaxSetup({ cache: false });
+  $.ajaxSetup({ 
+    cache: false,
+    isLocal:true
+  });
   $.ajax({
     type: "GET",
     url: "https://api.github.com/users/jmvx/repos",
