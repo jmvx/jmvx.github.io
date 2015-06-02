@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  console.log("document ready cb");
   $.ajaxSetup({ 
     cache: false,
     isLocal:true
@@ -8,6 +9,7 @@ $(document).ready(function() {
     url: "https://api.github.com/users/jmvx/repos",
     dataType: "json",
     success: function(result) {
+      console.log("success cb");
       for (i in result) {
         url = result[i].html_url;
         name = result[i].name;
