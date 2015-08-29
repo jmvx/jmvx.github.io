@@ -53,9 +53,14 @@ a:hover {
     color:gray;
     font-style:italic;
     font-size:18pt;
+    padding-top:20px;
 }
 
-#myprojects {
+#subtitle a {
+  font-size:12pt;
+}
+
+#myprojects, #mygists {
     margin-top:20px;
 }
 
@@ -64,7 +69,7 @@ a:hover {
     border:1px solid #e0e0e0;
     padding:10px;
     margin-bottom:20px;
-    height:75px;
+    height:80px;
     vertical-align:top;
     border-radius:5px;
     /* gradual hover effect */
@@ -103,7 +108,7 @@ footer {
 	text-align:center;
 	border-top:thin solid #e0e0e0;
 	padding-top:20px;
-    margin-top:20px;
+  margin-top:20px;
 	font-size:10pt;
-    height:100px;
+  height:100px;
 }
